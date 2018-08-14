@@ -17,8 +17,12 @@
 <body>
     <header>
         <h1>2048 курильщика</h1>
+        <input id="new-game-button" type="button" value="Новая игра">
+        
     </header>
     <content>
+            <div class="score"></div>
+            <div class="max-score">max</div>
         <div class="game-container">
             <div class="grid-container">
                <div class="grid-row">
@@ -47,6 +51,14 @@
                </div>
             </div>
             <div class="tile-container"></div>
+        </div>
+        <div class="state-surfer">
+            
+            <input id="left-arrow" type="button" value="&#8656;" disabled>
+            <label for="left-arrow">Предыдущее состояние</label>
+            <label for="right-arrow">Следующее состояние</label>
+            <input id="right-arrow" type="button" value="&#8658;" disabled>
+            
         </div>
     </content>
     <script src="script.js"></script>
